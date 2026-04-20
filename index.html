@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penney Project Gallery</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="projects" aria-labelledby="projects-title">
+        <p class="eyebrow">Samuel's Portfolio</p>
+        <h2 id="projects-title" class="section-heading">Projects</h2>
+        <div
+          class="chip-row"
+          role="toolbar"
+          aria-label="Filter projects by category"
+        >
+          <button
+            type="button"
+            class="chip is-active"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-filter="frontend"
+            aria-pressed="false"
+          >
+            Frontend
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-filter="physics"
+            aria-pressed="false"
+          >
+            Physics
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-filter="data"
+            aria-pressed="false"
+          >
+            Data Analytics
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-filter="mobile"
+            aria-pressed="false"
+          >
+            Mobile Development
+          </button>
+        </div>
+
+        <p id="filter-status" class="visually-hidden" aria-live="polite">
+          Showing all projects.
+        </p>
+
+        <ul class="project-list">
+          <li>
+            <article class="project-card" data-category="physics">
+              <div class="card-media media-physics" aria-hidden="true">
+                <span>01</span>
+              </div>
+              <p class="card-category">Physics</p>
+              <h3 class="card-title">
+                <a
+                  class="card-title-link"
+                  href="https://github.com/samuelpenney/GravitySim"
+                  >Gravity Simulator</a
+                >
+              </h3>
+              <p class="card-description">
+                A simple physics simulator showing how objects (planets/stars)
+                interact in space
+              </p>
+              <div class="status-bar">
+                <span><span class="status-label">Skills:</span>C++</span>
+                <span>Simulation</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card" data-category="frontend">
+              <div class="card-media media-frontend" aria-hidden="true">
+                <span>02</span>
+              </div>
+              <p class="card-category">Frontend</p>
+              <h3 class="card-title">
+                <a
+                  class="card-title-link"
+                  href="https://github.com/samuelpenney/penney-csci181-p1"
+                  >Recreation Website</a
+                >
+              </h3>
+              <p class="card-description">
+                A recreation of the Obsidian webpage, this was done for a project in my CSCI-181 class
+              </p>
+              <div class="status-bar">
+                <span><span class="status-label">Skills:</span>CSS, HTML</span>
+                <span>Main Webpage</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card" data-category="frontend">
+              <div class="card-media media-frontend" aria-hidden="true">
+                <span>03</span>
+              </div>
+              <p class="card-category">Frontend</p>
+              <h3 class="card-title">
+                <a
+                  class="card-title-link"
+                  href="https://github.com/samuelpenney/penney-csci181-practice"
+                  >Web Development Practice</a
+                >
+              </h3>
+              <p class="card-description">
+                Web Development practice, this is the portfolio we have been
+                working on throughout the course of the class
+              </p>
+              <div class="status-bar">
+                <span><span class="status-label">Skills:</span>HTML, CSS,JS</span>
+                <span>Portfolio</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card" data-category="frontend">
+              <div class="card-media media-frontend" aria-hidden="true">
+                <span>04</span>
+              </div>
+              <p class="card-category">Frontend</p>
+              <h3 class="card-title">
+                <a class="card-title-link" href="index.html"
+                  >Project Portfolio</a
+                >
+              </h3>
+              <p class="card-description">A portfolio of my current and past projects, including this portfolio.</p>
+              <div class="status-bar">
+                <span><span class="status-label">Skills:</span>HTML, CSS, JS</span>
+                <span>Portfolio</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card" data-category="mobile">
+              <div class="card-media media-mobile" aria-hidden="true">
+                <span>05</span>
+              </div>
+              <p class="card-category">Mobile Development</p>
+              <h3 class="card-title">
+                <a class="card-title-link" href="index.html">New App</a>
+              </h3>
+              <p class="card-description">Currently a work in progress also no project repo page. Learning iOS development and database for user data</p>
+              <div class="status-bar">
+                <span><span class="status-label">Platform:</span>iOS</span>
+                <span>Concept</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card" data-category="data">
+              <div class="card-media media-data" aria-hidden="true">
+                <span>06</span>
+              </div>
+              <p class="card-category">Data Analytics</p>
+              <h3 class="card-title">
+                <a class="card-title-link" href="https://github.com/samuelpenney/PandemicSim">Epidemic Simulator</a>
+              </h3>
+              <p class="card-description">A simulation of a society going through an epidemic. Includes graphs and real-time numbers throught the simulation</p>
+              <div class="status-bar">
+                <span
+                  ><span class="status-label">Skills:</span>Python, Java</span>
+                <span>Simulation</span>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="scripts/chip-filters.js"></script>
+  </body>
+</html>
